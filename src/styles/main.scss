@@ -1,7 +1,17 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import './blocks/container';
+@import './blocks/header';
+@import './blocks/icons';
+@import './blocks/nav';
+@import './blocks/actual';
+@import './blocks/item';
+@import './blocks/close';
 
 body {
-  background: $c-gray;
+  margin: 0;
+  font-family: $main-font;
+  color: $main-color;
+  font-weight: 400;
 }

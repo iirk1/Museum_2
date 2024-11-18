@@ -1,0 +1,77 @@
+.close {
+  padding: 60px 0 45px 0;
+  background-color: #f1f5f4;
+
+  @include onTablet {
+    padding: 80px 0 50px 0;
+  }
+
+  &__top {
+    @include onTablet {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 76px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 60px;
+    font-family: $second-font;
+    color: #1c1b29;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    @include onTablet {
+      align-self: center;
+      margin-bottom: 0;
+    }
+  }
+
+  &__items {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__btn {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+    width: 100%;
+
+    margin: 0;
+    border: 1px solid #cd4d31;
+
+    text-decoration: none;
+    color: #cd4d31;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+
+    &--mobile {
+      @include onTablet {
+        display: none;
+      }
+      @include onDesktop {
+        display: none;
+      }
+    }
+    &--tablet {
+      display: none;
+      @include onTablet {
+        width: 210px;
+        display: flex;
+      }
+      @include onDesktop {
+        display: flex;
+        width: 270px;
+      }
+    }
+  }
+}
